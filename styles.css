@@ -402,3 +402,37 @@ footer p {
 .modal-open {
     overflow: hidden;
 }
+
+.section-social-proof {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f9f9f9; /* ajuste conforme o padrão da sua página */
+}
+
+.section-social-proof h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.logos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.logos-grid img {
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+  filter: grayscale(0%);
+  transition: filter 0.3s ease;
+}
+
+.logos-grid img:hover {
+  filter: grayscale(100%);
+}
